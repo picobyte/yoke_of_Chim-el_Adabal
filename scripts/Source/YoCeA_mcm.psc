@@ -55,7 +55,7 @@ Event OnConfigInit()
 	OID = new Int[15]
 	Pages = new string[1]
 	Pages[0] = "Settings"
-	Splash = "Wooden_stocks.dds"
+	Splash = "A_Yoke_of_Gold.dds"
 EndFunction
 
 event OnPageReset(string page)
@@ -172,49 +172,34 @@ EndEvent
 Event OnOptionHighlight(int option)
 
 	If Option == OID[0]
-		enabledModDesc = !enabledModDesc
 		SetInfoText(enabledModDesc)
 	ElseIf Option == OID[1]
-		HumilThreshDesc = !HumilThreshDesc
 		SetInfoText(HumilThreshDesc)
 	ElseIf Option == OID[2]
-		enabledDebugDesc = !enabledDebugDesc
 		SetInfoText(enabledDebugDesc)
 	ElseIf Option == OID[3]
-		HumilEffectDesc = !HumilEffectDesc
 		SetInfoText(HumilEffectDesc)
 	ElseIf Option == OID[4]
-		ChamberpotHumilDesc = !ChamberpotHumilDesc
 		SetInfoText(ChamberpotHumilDesc)
 	ElseIf Option == OID[5]
-		BathingHumilDesc = !BathingHumilDesc
 		SetInfoText(BathingHumilDesc)
 	ElseIf Option == OID[6]
-		HPGarbStashDesc = !HPGarbStashDesc
 		SetInfoText(HPGarbStashDesc)
 	ElseIf Option == OID[7]
-		WeedNudeDesc = !WeedNudeDesc
 		SetInfoText(WeedNudeDesc)
 	ElseIf Option == OID[8]
-		GuardPlayDesc = !GuardPlayDesc
 		SetInfoText(GuardPlayDesc)
 	ElseIf Option == OID[9]
-		KennelCleanDesc = !KennelCleanDesc
 		SetInfoText(KennelCleanDesc)
 	ElseIf Option == OID[10]
-		BrothelCleanDesc = !BrothelCleanDesc
 		SetInfoText(BrothelCleanDesc)
 	ElseIf Option == OID[11]
-		BrothelCommunityDesc = !BrothelCommunityDesc
 		SetInfoText(BrothelCommunityDesc)
 	ElseIf Option == OID[12]
-		PoorCommServiceDesc = !PoorCommServiceDesc
 		SetInfoText(PoorCommServiceDesc)
 	ElseIf Option == OID[13]
-		StocksServiceDesc = !StocksServiceDesc
 		SetInfoText(StocksServiceDesc)
 	ElseIf Option == OID[14]
-		RottenPotatoDesc = !RottenPotatoDesc
 		SetInfoText(RottenPotatoDesc)
 	EndIf
 EndEvent
