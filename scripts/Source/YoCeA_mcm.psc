@@ -119,7 +119,7 @@ Event OnOptionSliderOpen(int Option)
 		SetSliderDialogInterval(0.1)
 	elseIf Option == OID[3]
 		SetSliderDialogStartValue(HumilEffect)
-		SetSliderDialogRange(1.0, 10.0)
+		SetSliderDialogRange(0.01, 10.0)
 		SetSliderDialogInterval(0.1)
 	endif
 EndEvent
