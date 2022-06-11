@@ -101,31 +101,31 @@ event OnPageReset(string page)
 	EndIf
 EndEvent
 
-;;; Slider Options
-Event OnOptionSliderAccept(int option, float floatValue)
+;;; Slider options
+Event OnOptionSliderAccept(int Option, float floatValue)
 
-	if option == OID[1]
-		SetSliderOptionValue(option, HumilThresh)
-	ElseIf option == OID[3]
-		SetSliderOptionValue(option, HumilEffect)
+	if Option == OID[1]
+		SetSliderOptionValue(Option, HumilThresh)
+	ElseIf Option == OID[3]
+		SetSliderOptionValue(Option, HumilEffect)
 	endif
 EndEvent
 
-Event OnOptionSliderOpen(int option)
+Event OnOptionSliderOpen(int Option)
 
-	if option == OID[1]
+	if Option == OID[1]
 		SetSliderDialogStartValue(HumilThresh)
 		SetSliderDialogRange(1.0, 100.0)
 		SetSliderDialogInterval(0.1)
-	elseIf option == OID[3]
+	elseIf Option == OID[3]
 		SetSliderDialogStartValue(HumilEffect)
 		SetSliderDialogRange(1.0, 10.0)
 		SetSliderDialogInterval(0.1)
 	endif
 EndEvent
 
-;;; Toggle Options
-event OnOptionSelect(int option)
+;;; Toggle options
+Event OnOptionSelect(int Option)
 
 	If Option == OID[0]
 		bMod = !bMod
@@ -169,7 +169,7 @@ event OnOptionSelect(int option)
 	EndIf
 EndEvent
 
-Event OnOptionHighlight(int option)
+Event OnOptionHighlight(int Option)
 
 	If Option == OID[0]
 		SetInfoText(enabledModDesc)
@@ -204,8 +204,8 @@ Event OnOptionHighlight(int option)
 	EndIf
 EndEvent
 
-event OnGameReload()
+Event OnGameReload()
 
 	parent.OnGameReload()
-endEvent
+EndEvent
 
